@@ -1,0 +1,16 @@
+<resources>
+
+    <string-array name="cert_type_list">
+        <item>终端所有者证书</item>
+        <item>通讯证书</item>
+        <item>公钥证书</item>
+        <item>应用签名验证证书</item>
+    </string-array>
+    <string-array name="cert_type_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

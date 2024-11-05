@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+    android:key="@string/settings_pref">
+    
+    <PreferenceCategory 
+        android:key="init_settings_pref">
+	    <PreferenceScreen
+	        android:icon="@drawable/cert"
+	        android:key="@string/cert_type_list_pref"
+	        android:summary="@string/cert_type_list_summary"
+	        android:title="@string/cert_type_list_title" >
+	        <CheckBoxPreference
+	            android:key="@string/cert_type_owner_pref"
+	            android:summary="@string/cert_type_owner_summary"
+	            android:persistent="true"
+	            android:defaultValue="true"  
+	            android:title="@string/cert_type_owner_title" />
+	        <CheckBoxPreference
+	            android:key="@string/cert_type_app_pref"
+	            android:summary="@string/cert_type_app_summary"
+	            android:title="@string/cert_type_app_title" 
+	            android:persistent="false"
+	            android:defaultValue="false"  />
+	        <CheckBoxPreference
+	            android:key="@string/cert_type_comm_pref"
+	            android:summary="@string/cert_type_comm_summary"
+	            android:persistent="true"
+	            android:defaultValue="false"  
+	            android:title="@string/cert_type_comm_title" />
+	        <CheckBoxPreference
+	            android:key="@string/cert_type_pub_pref"
+	            android:summary="@string/cert_type_pub_summary"
+	            android:persistent="true"
+	            android:defaultValue="false"
+	            android:enabled="false"
+	            android:title="@string/cert_type_pub_title" />
+	        <CheckBoxPreference
+	            android:key="@string/cert_type_keyloader_pref"
+	            android:summary="@string/cert_type_keyloader_summary"
+	            android:persistent="true"
+	            android:defaultValue="false"
+	            android:enabled="false"
+	            android:title="@string/cert_type_keyloader_title" />
+	        
+	    </PreferenceScreen>
+    </PreferenceCategory>
+    
+    <PreferenceScreen
+        android:key="@string/certmgr_cert_list_pref"
+        android:title="@string/certmgr_cert_list" 
+        android:summary="@string/certmgr_cert_list_summary"/>
+
+</PreferenceScreen>

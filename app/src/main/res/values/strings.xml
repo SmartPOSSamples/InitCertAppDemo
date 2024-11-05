@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">Initialize Certificates Demo</string>
+    <string name="action_settings">Settings</string>
+    <string name="logcat_output">Logcat</string>
+    <string name="interval_format_error">The format of interval-time is error!</string>
+    <string name="introduction">Guide\n\tClick \'init Certs\' to complete the initialization.</string>
+    <string name="autotest_run_cert">Init Certs</string>
+    <string name="autotest_run_apk">Init Apps</string>
+    <string name="autotest_exit">Uninstall</string>
+    <string name="autotest_settings">Settings</string>
+    <string name="settings_pref" translatable="false">settings_pref</string>
+    <string name="settings_title">Settings</string>
+    <string name="cert_type_list_pref" translatable="false">cert_type_list_pref</string>
+    <string name="cert_type_list_title">Initialize certificate list</string>
+    <string name="cert_type_list_summary">A list of certificates that need to be initialized</string>
+
+    <string name="cert_type_owner_pref" translatable="false">cert_type_owner_pref</string>
+    <string name="cert_type_owner_title">Terminal Owner Cert</string>
+    <string name="cert_type_owner_summary">Root Cert</string>
+    <string name="cert_type_comm_pref" translatable="false">cert_type_comm_pref</string>
+    <string name="cert_type_comm_title">Server comm Cert</string>
+    <string name="cert_type_comm_summary">Root Cert</string>
+    <string name="cert_type_pub_pref" translatable="false">cert_type_pub_pref</string>
+    <string name="cert_type_pub_title">Public Cert</string>
+    <string name="cert_type_pub_summary">Public Cert</string>
+    <string name="cert_type_app_pref" translatable="false">cert_type_app_pref</string>
+    <string name="cert_type_app_title">Application Signing Cert</string>
+    <string name="cert_type_app_summary">Root Cert</string>
+    <string name="cert_type_keyloader_pref" translatable="false">cert_type_keyloader_pref</string>
+    <string name="cert_type_keyloader_title">Keyloader Cert</string>
+    <string name="cert_type_keyloader_summary">Keyloader Cert</string>
+    <string name="init_finish_err">The initialization has completed successfully！</string>
+    <string name="certmgr_cert">Certificate list</string>
+    <string name="certmgr_cert_list_pref" translatable="false">cert_list_pref</string>
+    <string name="certmgr_cert_list">Certificate list</string>
+    <string name="certmgr_cert_list_summary">Display all exist certificates by list.</string>
+    <string name="certmgr_cert_type"> Type:</string>
+    <string name="certmgr_cert_alias"> Alias:</string>
+
+    <!-- demo -->
+    <string name="offline_owner_ailas_demo" translatable="false">MyOwner</string>
+    <string name="offline_keyloader_ailas_demo" translatable="false">MyHost</string>
+    <string name="offline_comm_ailas_demo" translatable="false">MyComm</string>
+    <string name="offline_app_ailas_demo" translatable="false">MyApp</string>
+    <string name="offline_app2_ailas_demo" translatable="false">MyApp2</string>
+
+    <string name="offline_owner_file_name_demo" translatable="false">MyOwner.crt</string>
+    <string name="offline_keyloader_file_name_demo" translatable="false">MyHost.crt</string>
+    <string name="offline_comm_file_name_demo" translatable="false">MyComm.crt</string>
+    <string name="offline_app_file_name_demo" translatable="false">MyApp.pem</string>
+    <string name="offline_app2_file_name_demo" translatable="false">MyApp2.pem</string>
+
+</resources>

@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="2sp"
+    android:paddingTop="2sp"
+    android:paddingRight="2sp"
+    android:paddingBottom="2sp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFFFF"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="5"
+                android:background="@color/block"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/logcat_output"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/settings"
+                        android:layout_width="125dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/settings_selector"
+                        android:text="@string/autotest_settings"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+                 <TextView
+                android:id="@+id/logcat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/block" />
+            -->
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/block">
+
+                <TextView
+                    android:id="@+id/logcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/block"
+                    android:textSize="15sp" />
+            </ScrollView>
+
+        </LinearLayout>
+        <!-- ************************************************************** -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.618"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_weight="1"
+                android:background="@color/block"
+                android:orientation="vertical">
+                <!-- <ListView
+			        android:id="@+id/listView"
+			        android:layout_width="match_parent"
+	                 android:layout_height="match_parent"/> -->
+                <TextView
+                    android:id="@+id/radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="@string/introduction"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.618"
+                android:background="@color/block"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/run_cert"
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/autotest_run_cert"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/run_apk"
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/autotest_run_apk"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/test"
+                    android:layout_width="125dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/autotest_exit"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
